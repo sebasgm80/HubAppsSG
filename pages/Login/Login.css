@@ -1,0 +1,174 @@
+
+#containerLogin {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+  
+    & #titleLogin {
+      margin: 2rem;
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  
+
+    }
+ 
+   
+  
+    & input {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 200px;
+      height: 40px;
+      border: 3px solid black;
+      border-radius: 40px;
+      padding: 10px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      color: black;
+      min-width: 200px;
+      padding: 10px;
+      margin: 20px;
+      border: 3px solid black;
+      border-radius: 40px;
+      background-color: white;
+      font-size: 14px;
+  }
+  
+    & button {
+      width: 200px;
+      height: 40px;
+      margin: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: rgb(113, 185, 6);
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 40px;
+      font-size: 14px;
+      -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
+      -moz-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
+      box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.61);
+  
+      transition: ease-in-out 0.1s;
+      &:hover {
+        -webkit-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.61);
+        -moz-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.61);
+        box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.61);
+  
+        transform: scale(0.98);
+      }
+    }
+
+
+  }
+
+    & .circulo1 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgb(217, 9, 9), rgb(255, 211, 35));
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      right: -20px;
+      box-shadow: 20px 20px 50px 15px rgba(80, 62, 62, 0.5);
+      animation: circulo1 15s infinite ease-in-out alternate;
+      
+    }
+    @keyframes circulo1 {
+      0% {
+          transform: translateY(100px);
+          
+      }
+      50% {
+          transform: translateX(100px);
+      }
+      100% {
+          transform: translateY(-100px);
+          
+      }
+      
+    }
+
+    & .circulo2 {
+      width: 1200px;
+      height: 1200px;
+      background: radial-gradient(circle, rgb(216, 163, 99), rgb(213, 20, 20));
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      left: -500px;
+      bottom: -500px;
+      box-shadow: 20px 20px 50px 15px rgba(0, 0, 0, 0.5);
+      animation: circulo2 10s infinite ease-in-out alternate;
+  }
+      @keyframes circulo2 {
+          0% {
+              transform: translateY(-30px);
+          }
+          50% {
+              transform: translateX(50px);
+          }
+          100% {
+              transform: translateY(-30px);
+          }  
+  }
+  & .circulo3 {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgb(240, 91, 11), rgb(221, 214, 19));
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    right: -100px;
+    bottom: -200px;
+    box-shadow: 10px 20px 100px 20px rgba(0, 0, 0, 0.5);
+    animation: circulo3 10s infinite ease-in-out alternate;
+}
+    @keyframes circulo3 {
+        0% {
+            transform: translateX(30px);
+        }
+        50% {
+            transform: translateY(-50px);
+        }
+        100% {
+            transform: translateX(-30px);
+        }
+        50% {
+            transform: translateY(80px);
+        }
+}
+& .circulo4 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgb(240, 91, 11), rgb(221, 214, 19));
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  bottom: -100px;
+  box-shadow: 10px 20px 100px 20px rgba(0, 0, 0, 0.5);
+  animation: circulo4 20s infinite ease-in-out alternate;
+}
+  @keyframes circulo4 {
+      0% {
+          transform: translateX(30px);
+      }
+      50% {
+          transform: translateY(-50px);
+      }
+      100% {
+          transform: translateX(-30px);
+      }
+      50% {
+          transform: translateY(80px);
+      }
+}
